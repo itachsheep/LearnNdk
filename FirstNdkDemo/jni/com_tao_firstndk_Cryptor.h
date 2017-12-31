@@ -4,9 +4,9 @@
 
 #ifndef _Included_com_tao_firstndk_Cryptor
 #define _Included_com_tao_firstndk_Cryptor
-#ifdef __cplusplus
-extern "C" {
-#endif
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
 /*
  * Class:     com_tao_firstndk_Cryptor
  * Method:    crypt
@@ -23,7 +23,15 @@ JNIEXPORT void JNICALL Java_com_tao_firstndk_Cryptor_crypt
 JNIEXPORT void JNICALL Java_com_tao_firstndk_Cryptor_decrypt
   (JNIEnv *, jclass, jstring, jstring);
 
-#ifdef __cplusplus
-}
-#endif
+/*
+ * Class:     com_tao_firstndk_Cryptor
+ * Method:    getMyName
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_tao_firstndk_Cryptor_getMyName
+  (JNIEnv *, jclass, jstring);
+
+//#ifdef __cplusplus
+//}
+//#endif
 #endif
